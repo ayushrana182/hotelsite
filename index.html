@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -173,35 +178,18 @@
           </div>
         </div>
       </div>
-      <div class="banner">
-        <div id="demo" class="carousel slide" data-ride="carousel">
-          <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-          </ul>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/banner-01.jpg" alt="banner-01" width="100%" height="500">
-            </div>
-            <div class="carousel-item">
-              <img src="images/banner-02.jpg" alt="banner-02" width="100%" height="500">
-            </div>
-            <div class="carousel-item">
-              <img src="images/banner-03.jpg" alt="banner-03" width="100%" height="500">
-            </div>
-            <div class="carousel-item">
-              <img src="images/banner-04.jpg" alt="banner-03" width="100%" height="500">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
+
+      
+    
+        <!-- New Carousel -->
+        <div class="slider">
+          <div class="item"><img src="images/banner-01.jpg" alt="banner-01"  height="300"></div>
+          <div class="item"><img src="images/banner-02.jpg" alt="banner-02"  height="300"></div>
+          <div class="item"><img src="images/banner-03.jpg" alt="banner-03"  height="300"></div>
+          <div class="item"><img src="images/banner-03.jpg" alt="banner-03"  height="300"></div>
+          <div class="item"><img src="images/banner-03.jpg" alt="banner-03"  height="300"></div>
         </div>
-      </div>
+
     </main>
 
     <!-- Contact Form -->
@@ -249,11 +237,34 @@
       </div>
       <div class="footer-copyright text-center">© 2020 Copyright: MyWebsite.com</div>
     </footer>
-
+    
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <!-- Jquery CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!-- Slick Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous"></script>
+    
+    <!-- Slider/Carousel JS Controls -->
+    <script type="text/javascript">
+      $(".slider").slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 3000,
+    accessibility:true,
+    centerMode: true,
+    
+    
+      })
+    </script>
+  
+  
   </body>
 </html>

@@ -139,3 +139,19 @@ body{
     color: #fff;
     text-align: center;
 }
+
+
+/* Slider/Carousel */
+.slick-slide img{
+    width: 100%;
+}
+.slick-slide{
+    margin: 30px 15px;
+}
+.slick-dots li button ::before,
+.slick-dots li .slick-active button:before{
+    color: #fff;
+} 
+.slick-dots li button:before{
+    font-size: 10px;
+}
